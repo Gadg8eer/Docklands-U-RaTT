@@ -1,0 +1,130 @@
+##grflangid 0x01 
+# This is the English language file 
+# GRF name and description definitions 
+STR_GRF_NAME:{TITLE} {VERSION}
+STR_GRF_DESCRIPTION:Docklands brings your yards and harbors to life with NRT road and tramway types. Thanks to Andy, Wolf, Frosch and Alberth! {}{COPYRIGHT}2017 D Erikson{}License: GPL v2 {}Modefied in 2022 by Brickblock1 to work with U&RaTT.
+
+# parameter strings
+# style switch
+STR_PARAM_NAME_STYLES:Graphic Style
+STR_PARAM_DESC_STYLES:Choose Road and Tramway types to match CHIPS & FIRS, Industrial Stations Renewal, or both
+STR_PARAM_VALUE_STYLE_CHIPS:CHIPS/FIRS Style
+STR_PARAM_VALUE_STYLE_ISR:ISR Style
+STR_PARAM_VALUE_STYLE_BOTH:Both CHIPS and ISR Style
+
+#Depot switches
+STR_PARAM_NAME_DEPOTS:Depot Style
+STR_PARAM_DESC_DEPOTS:Choose Depot Styles by Road or Tramway type style or Build Date.
+STR_PARAM_VALUE_DEPOT_THEME_WIDE:Vareity of CHIPS & ISR depots, per road or tramway type.
+STR_PARAM_VALUE_DEPOT_THEME_NARROW:One unified depot style each for CHIPS & ISR.
+STR_PARAM_VALUE_DEPOT_THEME_CHRON:CHIPS and ISR depots based on Build Date.
+STR_PARAM_VALUE_DEPOT_MLSS_WIDE:Vareity of Modular Locomotive Shed style depots.
+STR_PARAM_VALUE_DEPOT_MLSS_CHRON:Modular Locomotive Shed style depots based on Build Date.
+
+#ELRD switches
+STR_PARAM_NAME_ELRD:Define ELRD
+STR_PARAM_DESC_ELRD:Choose to enable ELRD even if it is not defined by another grf.
+
+# waytype strings 
+# roadtypes
+# mud road
+STR_NAME_YDRD:CHIPS Style mud driveway
+STR_TOOLBAR_CAPTION_YDRD:Mud Yard Driveway Construction
+STR_MENU_TEXT_YDRD:Mud Yard Driveway Construction
+STR_BUILD_WINDOW_CAPTION_YDRD:New Road Vehicles
+STR_AUTOREPLACE_TEXT_YDRD:Road Vehicles
+STR_NEW_ENGINE_TEXT_YDRD:New Road Vehicle
+
+# cobble road
+STR_NAME_CBRD:CHIPS Style cobble driveway
+STR_TOOLBAR_CAPTION_CBRD:Cobblestone Driveway Constructon
+STR_MENU_TEXT_CBRD:Cobblestone Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_CBRD:New Road Vehicles
+STR_AUTOREPLACE_TEXT_CBRD:New Road Vehicles
+STR_NEW_ENGINE_TEXT_CBRD:New Road Vehicle
+STR_NAME_CBRE:CHIPS Style cobble electric driveway
+STR_TOOLBAR_CAPTION_CBRE:Cobblestone Electric Driveway Constructon
+STR_MENU_TEXT_CBRE:Cobblestone Electric Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_CBRE:New Electric Road Vehicles
+STR_AUTOREPLACE_TEXT_CBRE:Electric Road Vehicles
+STR_NEW_ENGINE_TEXT_CBRE:New Electric Road Vehicle
+
+# paved road
+STR_NAME_PVRD:CHIPS Style asphalt driveway
+STR_TOOLBAR_CAPTION_PVRD:Asphalt Driveway Constructon
+STR_MENU_TEXT_PVRD:Asphalt Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_PVRD:New Road Vehicles
+STR_AUTOREPLACE_TEXT_PVRD:Road Vehicles
+STR_NEW_ENGINE_TEXT_PVRD:New Road Vehicle
+STR_NAME_PVRE:CHIPS Style asphalt elecctric driveway
+STR_TOOLBAR_CAPTION_PVRE:Asphalt Electric Driveway Constructon
+STR_MENU_TEXT_PVRE:Asphalt Electric Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_PVRE:New Electric Road Vehicles
+STR_AUTOREPLACE_TEXT_PVRE:Electric Road Vehicles
+STR_NEW_ENGINE_TEXT_PVRE:New Electric Road Vehicle
+# isr road
+STR_NAME_IRD1:ISR Style paved driveway
+STR_TOOLBAR_CAPTION_IRD1:Industrial Station Driveway Constructon
+STR_MENU_TEXT_IRD1:Industrial Station Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_IRD1:New Road Vehicles
+STR_AUTOREPLACE_TEXT_IRD1:Road Vehicles
+STR_NEW_ENGINE_TEXT_IRD1:New Road Vehicle
+STR_NAME_ISRE:ISR Style paved electric driveway
+STR_TOOLBAR_CAPTION_ISRE:Industrial Station Electric Driveway Constructon
+STR_MENU_TEXT_ISRE:Industrial Station Electric Driveway Constructon
+STR_BUILD_WINDOW_CAPTION_ISRE:New Electric Road Vehicles
+STR_AUTOREPLACE_TEXT_ISRE:Electric Road Vehicles
+STR_NEW_ENGINE_TEXT_ISRE:New Electric Road Vehicle
+
+# tramtypes
+# mud tram
+STR_NAME_YDTR:CHIPS Style mud tramway
+STR_TOOLBAR_CAPTION_YDTR:Mud Yard Tramway Construction
+STR_MENU_TEXT_YDTR:Mud Yard Tramway Construction
+STR_BUILD_WINDOW_CAPTION_YDTR:New Trams
+STR_AUTOREPLACE_TEXT_YDTR:Trams
+STR_NEW_ENGINE_TEXT_YDTR:New Tram
+
+# cobble tram
+STR_NAME_CBTR:CHIPS Style cobble tramway
+STR_TOOLBAR_CAPTION_CBTR:Cobblestone Tramway Construction
+STR_MENU_TEXT_CBTR:Cobblestone Tramway Construction
+STR_BUILD_WINDOW_CAPTION_CBTR:New Trams
+STR_AUTOREPLACE_TEXT_CBTR:Trams
+STR_NEW_ENGINE_TEXT_CBTR:New Tram
+STR_NAME_CBTE:CHIPS Style cobble electric tramway
+STR_TOOLBAR_CAPTION_CBTE:Cobblestone Electric Tramway Construction
+STR_MENU_TEXT_CBTE:Cobblestone Electric Tramway Construction
+STR_BUILD_WINDOW_CAPTION_CBTE:New Electric Trams
+STR_AUTOREPLACE_TEXT_CBTE:Electric Trams
+STR_NEW_ENGINE_TEXT_CBTE:New Electric Tram
+
+# paved tram
+STR_NAME_PVTR:CHIPS Style asphalt tramway
+STR_TOOLBAR_CAPTION_PVTR:Asphalt Tramway Construction
+STR_MENU_TEXT_PVTR:Asphalt Tramway Construction
+STR_BUILD_WINDOW_CAPTION_PVTR:New Trams
+STR_AUTOREPLACE_TEXT_PVTR:Trams
+STR_NEW_ENGINE_TEXT_PVTR:New Tram
+STR_NAME_PVTE:CHIPS Style asphalt elecctric tramway
+STR_TOOLBAR_CAPTION_PVTE:Asphalt Electric Tramway Construction
+STR_MENU_TEXT_PVTE:Asphalt Electric Tramway Construction
+STR_BUILD_WINDOW_CAPTION_PVTE:New Electric Trams
+STR_AUTOREPLACE_TEXT_PVTE:Electric Trams
+STR_NEW_ENGINE_TEXT_PVTE:New Electric Tram
+# isr tram
+STR_NAME_NIAN:ISR Style paved tramway
+STR_TOOLBAR_CAPTION_NIAN:Industrial Station Tramway Construction
+STR_MENU_TEXT_NIAN:Industrial Station Tramway Construction
+STR_BUILD_WINDOW_CAPTION_NIAN:New Trams
+STR_AUTOREPLACE_TEXT_NIAN:Trams
+STR_NEW_ENGINE_TEXT_NIAN:New Tram
+STR_NAME_NIAE:ISR Style paved electric tramway
+STR_TOOLBAR_CAPTION_NIAE:Industrial Station Electric Tramway Construction
+STR_MENU_TEXT_NIAE:Industrial Station Electric Tramway Construction
+STR_BUILD_WINDOW_CAPTION_NIAE:New Electric Trams
+STR_AUTOREPLACE_TEXT_NIAE:Electric Trams
+STR_NEW_ENGINE_TEXT_NIAE:New Electric Tram
+# vehicle strings
+# trolley truck string
+STR_NAME_TROLLEY_TRUCK_1:Docklands MKI Trolley Truck

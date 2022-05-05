@@ -3,7 +3,7 @@
 // In this set I aim to provide a proof of concept of how NRT might bring these constructions to life
 
 grf {
-	grfid: "DE\04\01";
+	grfid: "BBDL";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
 	version: 5;
@@ -1095,6 +1095,11 @@ item(FEAT_ROADTYPES, ad, 41) {
 }
 }
 
+//U&RaTT tramtypes:
+//"NAAN", "NBAN", "NCAN", "NUAN", "NUBN", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"
+
+//U&RaTT EL tramtypes:
+//"NAAE", "NBAE", "NCAE", "NUAE", "NUBE"
 
 if (style_param == 0 || style_param == 2) {
 item(FEAT_TRAMTYPES, mud_yard_tramway, 0) {
@@ -1102,7 +1107,7 @@ item(FEAT_TRAMTYPES, mud_yard_tramway, 0) {
         name: string(STR_NAME_YDTR);
         label: "YDTR";
 		speed_limit: 60 km/h;
-        powered_tramtype_list: ["RAIL", "ELRL", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        powered_tramtype_list: ["RAIL", "ELRL", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE", "NAAN", "NBAN", "NCAN", "NUAN", "NUBN", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_YDTR);
         menu_text: string(STR_MENU_TEXT_YDTR);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_YDTR);
@@ -1125,7 +1130,7 @@ item(FEAT_TRAMTYPES, cobble_tramway, 1) {
         name: string(STR_NAME_CBTR);
         label: "CBTR";
 	speed_limit: 60 km/h;
-        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE", "NAAN", "NBAN", "NCAN", "NUAN", "NUBN", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_CBTR);
         menu_text: string(STR_MENU_TEXT_CBTR);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_CBTR);
@@ -1149,7 +1154,7 @@ item(FEAT_TRAMTYPES, electric_cobble_tramway, 2) {
         name: string(STR_NAME_CBTE);
         label: "CBTE";
 	speed_limit: 60 km/h;
-        powered_tramtype_list: ["PVTE", "NIAE"];
+        powered_tramtype_list: ["ELRL", "PVTE", "NIAE", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_CBTE);
         menu_text: string(STR_MENU_TEXT_CBTE);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_CBTE);
@@ -1174,7 +1179,7 @@ item(FEAT_TRAMTYPES, paved_tramway, 3) {
         name: string(STR_NAME_PVTR);
         label: "PVTR";
 	speed_limit: 60 km/h;
-        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTR", "CBTE", "PVTE", "NIAN", "NIAE"];
+        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTR", "CBTE", "PVTE", "NIAN", "NIAE", "NAAN", "NBAN", "NCAN", "NUAN", "NUBN", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_PVTR);
         menu_text: string(STR_MENU_TEXT_PVTR);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_PVTR);
@@ -1197,7 +1202,7 @@ item(FEAT_TRAMTYPES, electric_paved_tramway, 4) {
         name: string(STR_NAME_PVTE);
         label: "PVTE";
 	speed_limit: 60 km/h;
-        powered_tramtype_list: ["CBTE", "NIAE"];
+        powered_tramtype_list: ["ELRL", "CBTE", "NIAE", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_PVTE);
         menu_text: string(STR_MENU_TEXT_PVTE);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_PVTE);
@@ -1223,7 +1228,7 @@ item(FEAT_TRAMTYPES, isr_tramway, 5) {
         name: string(STR_NAME_NIAN);
         label: "NIAN";
 	speed_limit: 60 km/h;
-        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAE"];
+        powered_tramtype_list: ["RAIL", "ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAE", "NAAN", "NBAN", "NCAN", "NUAN", "NUBN", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_NIAN);
         menu_text: string(STR_MENU_TEXT_NIAN);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_NIAN);
@@ -1245,8 +1250,8 @@ item(FEAT_TRAMTYPES, electric_isr_tramway, 6) {
     property {
         name: string(STR_NAME_NIAE);
         label: "NIAE";
-	speed_limit: 60 km/h;
-        powered_tramtype_list: ["CBTE", "PVTE"];
+		speed_limit: 60 km/h;
+        powered_tramtype_list: ["ELRL", "CBTE", "PVTE", "NAAE", "NBAE", "NCAE", "NUAE", "NUBE"];
         toolbar_caption: string(STR_TOOLBAR_CAPTION_NIAE);
         menu_text: string(STR_MENU_TEXT_NIAE);
         build_window_caption: string(STR_BUILD_WINDOW_CAPTION_NIAE);
@@ -1266,6 +1271,7 @@ item(FEAT_TRAMTYPES, electric_isr_tramway, 6) {
 }
 }
 
+if (tramtype_available("RAIL") || param_do_ELRD) {
 item(FEAT_TRAMTYPES, normal_tramway, 7) {
     property {
         label: "RAIL";
@@ -1273,7 +1279,9 @@ item(FEAT_TRAMTYPES, normal_tramway, 7) {
         introduces_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
 	}
 }
+}
 
+if (tramtype_available("ELRL")) {
 item(FEAT_TRAMTYPES, electric_tramway, 8) {
     property {
         label: "ELRL";
@@ -1283,3 +1291,92 @@ item(FEAT_TRAMTYPES, electric_tramway, 8) {
     }
 
 }    
+}
+
+if (tramtype_available("NBAN")) {
+item(FEAT_TRAMTYPES, normal_tramway_1, 9) {
+    property {
+        label: "NBAN";
+        powered_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        introduces_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+	}
+}
+}
+
+if (tramtype_available("NCAN")) {
+item(FEAT_TRAMTYPES, normal_tramway_2, 10) {
+    property {
+        label: "NCAN";
+        powered_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        introduces_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+	}
+}
+}
+
+if (tramtype_available("NUAN")) {
+item(FEAT_TRAMTYPES, normal_tramway_3, 11) {
+    property {
+        label: "NUAN";
+        powered_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        introduces_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+	}
+}
+}
+
+if (tramtype_available("NUBN")) {
+item(FEAT_TRAMTYPES, normal_tramway_4, 12) {
+    property {
+        label: "NUBN";
+        powered_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+        introduces_tramtype_list: ["ELRL", "YDTR", "CBTR", "CBTE", "PVTR", "PVTE", "NIAN", "NIAE"];
+	}
+}
+}
+
+if (tramtype_available("NBAE")) {
+item(FEAT_TRAMTYPES, electric_tramway_1, 14) {
+    property {
+        label: "NBAE";
+        powered_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+	   introduces_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+        tramtype_flags: bitmask(TRAMTYPE_FLAG_CATENARY);
+    }
+
+}    
+}
+
+if (tramtype_available("NCAE")) {
+item(FEAT_TRAMTYPES, electric_tramway_2, 15) {
+    property {
+        label: "NCAE";
+        powered_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+	   introduces_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+        tramtype_flags: bitmask(TRAMTYPE_FLAG_CATENARY);
+    }
+
+}    
+}
+
+if (tramtype_available("NUAE")) {
+item(FEAT_TRAMTYPES, electric_tramway_3, 16) {
+    property {
+        label: "NUAE";
+        powered_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+	   introduces_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+        tramtype_flags: bitmask(TRAMTYPE_FLAG_CATENARY);
+    }
+
+}    
+}
+
+if (tramtype_available("NUBE")) {
+item(FEAT_TRAMTYPES, electric_tramway_4, 17) {
+    property {
+        label: "NUBE";
+        powered_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+	   introduces_tramtype_list: ["CBTE", "PVTE", "NIAE"];
+        tramtype_flags: bitmask(TRAMTYPE_FLAG_CATENARY);
+    }
+
+}    
+}

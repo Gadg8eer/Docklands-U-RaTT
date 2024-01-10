@@ -6,8 +6,8 @@ grf {
 	grfid: "BBDL";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
-	version: 5;
-	min_compatible_version: 5;
+	version: 6;
+	min_compatible_version: 6;
 	param 0 {								//Parameter for underlay tile style
 	style_param {			
 		type: int;
